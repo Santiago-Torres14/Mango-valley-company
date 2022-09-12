@@ -1,0 +1,52 @@
+.accordion {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-title {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    background: #1569a8;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.3em;
+    align-items: center;
+}
+
+.accordion-title:after {
+    content: '+';
+    font-size: 1.2em;
+    transition: transform .5s ease-in-out;
+}
+
+.accordion-title:hover {
+    transition: background-color .5s ease;
+    background-color: #0e4671;
+}
+
+.is-title-expanded {
+    transition: background .5s;
+    background: #0e4671;
+}
+
+.is-title-expanded:after {
+    content: '-';
+    transform: rotate(-360deg);
+}
+
+.accordion-content {
+    overflow: hidden;
+    min-height: 0;
+    max-height: 0;
+    transition: min-height .5s ease-in-out, max-height .4s ease-in-out;
+    margin: 0 0.2rem;
+    background-color: gainsboro;
+}
+
+.is-accordion-content-expanded {
+    min-height: 1rem;
+    max-height: 30rem;
+}
