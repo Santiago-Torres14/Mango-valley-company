@@ -1,7 +1,31 @@
+:root {
+    --main: #265b8b;
+    --secondary: #1181c8;
+    --contrast: #ececeb;
+    --light: #84c7f2;
+    --light-white: #fff;
+}
+
 html, body {
     margin: auto;
     width: 90%;
     padding: 0.5rem;
     font-size: 14px;
     font-family: Arial;
+    box-sizing: border-box;
+    background: #ECECEB;
+}
+
+button {
+    background: var(--secondary);
+    color: var(--light-white);
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background: var(--main);
 }

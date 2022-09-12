@@ -9,7 +9,7 @@
     color: white;
     cursor: pointer;
     display: flex;
-    background: #1569a8;
+    background: var(--secondary);
     justify-content: space-between;
     width: 100%;
     padding: 0.3em;
@@ -24,12 +24,12 @@
 
 .accordion-title:hover {
     transition: background-color .5s ease;
-    background-color: #0e4671;
+    background-color: var(--main);
 }
 
 .is-title-expanded {
     transition: background .5s;
-    background: #0e4671;
+    background: var(--main);
 }
 
 .is-title-expanded:after {
