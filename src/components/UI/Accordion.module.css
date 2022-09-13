@@ -1,6 +1,7 @@
 .accordion {
     margin: 0 auto;
     width: 80%;
+    min-width: 50rem;
     display: flex;
     flex-direction: column;
 }
