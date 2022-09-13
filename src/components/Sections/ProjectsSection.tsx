@@ -24,7 +24,7 @@ const ProjectsSection: React.FC = () => {
 
     return (<section>
         <h1>PROJECTS</h1>
-        <Accordion expand={isExpandedHandler} isExpanded={isExpanded} title={"Development team"}>
+        <Accordion expand={isExpandedHandler} isExpanded={isExpanded} title={"Projects"}>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
